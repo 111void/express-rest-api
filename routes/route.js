@@ -90,7 +90,7 @@ router.get('/dl/ytmp4', async (req, res) => {
 
 // ------ Gallery ------- //
 router.get('/gallery/indo', async (req, res, next) => {
-	let femdom = (await axios.get('https://raw.githubusercontent.com/111void/scraper-data-master/refs/heads/master/cecan/cecan.json')).data;
+	let femdom = (await axios.get('https://raw.githubusercontent.com/111void/scraper-data/refs/heads/master/cecan/indo.json')).data;
 	let random = femdom[Math.floor(Math.random() * femdom.length)]
 	var result = await getBuffer(random)
 	res.set({'Content-Type': 'image/jpeg'})
@@ -98,7 +98,7 @@ router.get('/gallery/indo', async (req, res, next) => {
 })
 
 router.get('/gallery/indo2', async (req, res, next) => {
-	let femdom = (await axios.get('https://raw.githubusercontent.com/111void/scraper-data-master/refs/heads/master/cecan/cecan2.json')).data;
+	let femdom = (await axios.get('https://raw.githubusercontent.com/111void/scraper-data/refs/heads/master/cecan/indo2.json')).data;
 	let random = femdom[Math.floor(Math.random() * femdom.length)]
 	var result = await getBuffer(random)
 	res.set({'Content-Type': 'image/jpeg'})
@@ -106,7 +106,7 @@ router.get('/gallery/indo2', async (req, res, next) => {
 })
 
 router.get('/gallery/china', async (req, res, next) => {
-	let femdom = (await axios.get('https://raw.githubusercontent.com/111void/scraper-data-master/refs/heads/master/cecan/china.json')).data;
+	let femdom = (await axios.get('https://raw.githubusercontent.com/111void/scraper-data/refs/heads/master/cecan/cina.json')).data;
 	let random = femdom[Math.floor(Math.random() * femdom.length)]
 	var result = await getBuffer(random)
 	res.set({'Content-Type': 'image/jpeg'})
@@ -114,7 +114,7 @@ router.get('/gallery/china', async (req, res, next) => {
 })
 
 router.get('/gallery/cosplay', async (req, res, next) => {
-	let femdom = (await axios.get('https://raw.githubusercontent.com/111void/scraper-data-master/refs/heads/master/cosplay/cosplay.json')).data;
+	let femdom = (await axios.get('https://raw.githubusercontent.com/111void/scraper-data/refs/heads/master/cosplay/cosplay.json')).data;
 	let random = femdom[Math.floor(Math.random() * femdom.length)]
 	var result = await getBuffer(random)
 	res.set({'Content-Type': 'image/jpeg'})
